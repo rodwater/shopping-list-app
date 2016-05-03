@@ -3,6 +3,7 @@ body {
 	background-repeat: repeat;
 	background-position: top;
 	color: white;
+	background-size: auto auto;
 }
 
 @font-face {
@@ -76,4 +77,5 @@ footer {
 	margin-top: 270px;
 	font-family: junction;
 	font-size: .7em;
+	opacity: .6;
 }
