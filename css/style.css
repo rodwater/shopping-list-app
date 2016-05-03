@@ -5,9 +5,20 @@ body {
 	color: white;
 }
 
+@font-face {
+	font-family: junction;
+	src: url('../fonts/junction-regular.ttf');
+}
+
+@font-face {
+	font-family:leaguegothic;
+	src: url('../fonts/leaguegothic-regular-webfont.ttf');
+}
+
 h1 {
+	margin-top: 45px;
 	text-align: center;
-	font-family: impact;
+	font-family: junction;
 }
 
 form {
@@ -21,19 +32,48 @@ form ul li {
 	text-align: center;
 	font-size: .6em;
 	display: inline-block;
+	padding: 5px;
+}
+
+input {
+	text-align: center;
+}
+
+.smallbox {
+	width: 30px;
 }
 
 #list {
 	text-align: center;
-	font-family: verdana;
-	font-size: 1.3em;
-	margin-top: 50px;
-	background-color: gray;
-	padding: 20px;
+	font-family: leaguegothic;
+	font-size: 1.9em;
+	margin-top: 30px;
+	color: black;
+	padding: 25;
+	width: 100%;
 	background-image: url('../images/tiles.png');
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
+}
+
+.done {
+	opacity: .2;
+	font-size: .8em;
+	font-style: italic;
+}
+
+.emoji {
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 270px;
+	font-family: junction;
+	font-size: .7em;
 }
