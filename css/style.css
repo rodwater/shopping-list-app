@@ -1,9 +1,24 @@
+* {
+	/*border: 1px solid red;*/
+}
+
+html {
+	position: relative;
+    min-height: 100%;
+}
+
+header {
+	height: 88px;
+}
 body {
 	background-image: url('../images/plates.jpg');
-	background-repeat: repeat;
+	background-repeat: none;
 	background-position: top;
+	background-position-x: 152px;
+	background-position-y: 15px;
 	color: white;
-	background-size: auto auto;
+	text-align: center;
+	font-family: junction;
 }
 
 @font-face {
@@ -17,65 +32,76 @@ body {
 }
 
 h1 {
-	margin-top: 45px;
+	margin-top: 15px;
 	text-align: center;
-	font-family: junction;
+	font-family: leaguegothic;
+	font-size: 4em;
 }
 
 form {
-	margin: 0 auto;
-	text-align: center;
-}
-
-
-form ul li {
-	font-family: arial;
-	text-align: center;
-	font-size: .6em;
-	display: inline-block;
-	padding: 5px;
-}
-
-input {
-	text-align: center;
-}
-
-.smallbox {
-	width: 30px;
-}
-
-#list {
-	text-align: center;
-	font-family: leaguegothic;
-	font-size: 1.9em;
-	margin-top: 30px;
-	color: black;
-	padding: 25;
-	width: 100%;
-	background-image: url('../images/tiles.png');
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 ul {
-	list-style-type: none;
-	padding: 0;
+	background-image: url('../images/tiles.png');
+	overflow: scroll;
 }
 
-.done {
-	opacity: .2;
-	font-size: .8em;
-	font-style: italic;
+#button {
+    display: inline-block;
+    height:20px;
+    width:50px;
+    background-color:#cc0000;
+    font-family:arial;
+    font-weight:bold;
+    color:#ffffff;
+    border-radius: 15px;
+    text-align:center;
+    
+}
+.quantity {
+    display: inline-block;
+    height:20px;
+    width:90px;
+    font-family: junction;
+    color: white;
+    text-align: right;
+    margin-top:2px;
+    font-size: .9em;
+    padding: 0;
 }
 
-.emoji {
-	width: 18px;
-	height: 18px;
-	margin-left: 5px;
+.rules {
+	font-family: junction;
+	font-size: .7em;
+	opacity: .8;
+	position: relative;
+	top: 45px;
+}
+
+.list {
+    height: 200px;
+    width: 100%;
+    font-family:leaguegothic;
+    color:black;
+    font-size: 1.8em;
+    padding: 0;
 }
 
 footer {
 	text-align: center;
-	margin-top: 270px;
 	font-family: junction;
 	font-size: .7em;
+	position: fixed;
+	top: 600px;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
 	opacity: .6;
+	padding-top: 10px;
 }

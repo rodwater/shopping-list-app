@@ -6,27 +6,22 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="food.png">
 </head>
-<header><h1>BASKET CASE</h1></header>
+<header><h1>BASKET CASE</h1><br></header>
+
 <body>
-	<div id=input>
-		<form>
-			<ul>
-				<li>
-					<input type="text" name="item" size="40"><br>
-					Item description</li>
-				<li><input type="number" name="quantity" placeholder="1" class="smallbox"><br>Qty</li>
-				<li><input type="submit" name="add" value="Add"><br>Add to list</li>
-		</form>
-	</div>
-	<div id=list>
-		<ul>
-			<li>Avocados (3) <a href><img class="emoji" src="images/tick.png"></a> <a href><img class="emoji" src="images/delete.png"></a></li>
-			<li class="done">Pineapple (1) <a href><img class="emoji" src="images/tick.png"></a> <a href><img class="emoji" src="images/delete.png"></a></li>
-			<li>Oranges (5) <a href><img class="emoji" src="images/tick.png"></a> <a href><img class="emoji" src="images/delete.png"></a></li>
-			<li class="done">Coconuts (9) <a href><img class="emoji" src="images/tick.png"></a> <a href><img class="emoji" src="images/delete.png"></a></li>
-			<li class="done">Pasta (1) <a href><img class="emoji" src="images/tick.png"></a> <a href><img class="emoji" src="images/delete.png"></a></li>
-		</ul>
-	</div>	
+<div class="rules">*Single Click Items to check off | Double-Click to delete*</div>
+<form name="checkListForm">
+    <div class="quantity">Quantity:</div>
+    <input type="text" name="quantity" maxlength="8" size="8" />
+    <div class="quantity">Product:</div>
+    <input type="text" name="checkListItem" />
+    <input type="button" id="button" value="add">
+</form>
+    <br/>
+    <ul class="list">
+    </ul>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>	
 </body>
-<footer>© 2016. Rodney Sino-Cruz</footer>
+<footer>© 2016 | Rodney Sino-Cruz</footer>
 </html>
