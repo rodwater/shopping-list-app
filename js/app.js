@@ -13,6 +13,8 @@ $(document).ready(function () {
     });
     $(function() {
     $( ".list" ).sortable();
+
     });
+    //$(".list").draggable({opacity: 0.7, helper: "clone"});
 });
 

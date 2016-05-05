@@ -63,6 +63,10 @@ ul {
     text-align:center;
     
 }
+
+#qty {
+	width: 40px;
+}
 .quantity {
     display: inline-block;
     height:20px;
