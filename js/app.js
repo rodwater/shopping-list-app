@@ -11,5 +11,8 @@ $(document).ready(function () {
     $(document).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('li').remove();
     });
+    $(function() {
+    $( ".list" ).sortable();
+    });
 });
 

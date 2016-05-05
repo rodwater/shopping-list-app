@@ -92,6 +92,16 @@ ul {
     padding: 0;
 }
 
+.notes {
+	font-family: junction;
+	font-size: .8em;
+	font-style: italic;
+	opacity: .7;
+	position: relative;
+	bottom: 19px;
+	text-align: center
+}
+
 footer {
 	text-align: center;
 	font-family: junction;
@@ -99,6 +109,7 @@ footer {
 	position: fixed;
 	top: 600px;
 	bottom: 0;
+	right: 7px;
 	height: 100px;
 	width: 100%;
 	overflow: hidden;
